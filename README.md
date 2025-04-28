@@ -1,32 +1,50 @@
 # 📧 Cold Mail Generator
-Cold email generator for services company using groq, langchain and streamlit. It allows users to input the URL of a company's careers page. The tool then extracts job listings from that page and generates personalized cold emails. These emails include relevant portfolio links sourced from a vector database, based on the specific job descriptions. 
 
-**Imagine a scenario:**
+**Cold email generator for service companies** built using **Groq**, **Langchain**, and **Streamlit**.  
+This tool helps you create highly personalized cold emails by extracting job listings from a company's careers page and suggesting portfolio links based on the job description.
 
-- Nike needs a Principal Software Engineer and is spending time and resources in the hiring process, on boarding, training etc
-- Atliq is Software Development company can provide a dedicated software development engineer to Nike. So, the business development executive (Mohan) from Atliq is going to reach out to Nike via a cold email.
+---
 
-![img.png](imgs/img.png)
+## 🚀 Features
+- Input the URL of a company's **careers page**.
+- Automatically **extract job listings** from the page.
+- Generate **personalized cold emails** aligned with each job description.
+- Include **relevant portfolio links** sourced dynamically from a **vector database**.
 
-## Architecture Diagram
-![img.png](imgs/architecture.png)
+---
 
-## Set-up
-1. To get started we first need to get an API_KEY from here: https://console.groq.com/keys. Inside `app/.env` update the value of `GROQ_API_KEY` with the API_KEY you created. 
+## ✨ Example Scenario
+Imagine this:
+
+- **Nike** is hiring for a **Principal Software Engineer**.
+- They are investing time and money in hiring, onboarding, and training.
+- **Atliq**, a software development company, can quickly deploy an expert engineer for Nike.
+- **Mohan**, the Business Development Executive at Atliq, uses the Cold Mail Generator to send Nike a **personalized, relevant email** — offering immediate solutions.
+
+> 📩 **Result:** Higher chance of response and business collaboration.
+
+![Demo Screenshot](imgs/img.png)
+
+---
+
+## 🏗️ Architecture Diagram
+
+Here’s how it all fits together:
+
+![Architecture Diagram](imgs/architecture.png)
+
+---
+
+## ⚙️ Getting Started
+
+### 1. Set Up Your API Key
+- Go to [Groq Console](https://console.groq.com/keys) and generate your API Key.
+- Update the `app/.env` file:
+  ```bash
+  GROQ_API_KEY=your_api_key_here
 
 
-2. To get started, first install the dependencies using:
-    ```commandline
-     pip install -r requirements.txt
-    ```
-   
-3. Run the streamlit app:
-   ```commandline
-   streamlit run app/main.py
-   ```
-   
+Attribution is required in all copies or substantial portions of the software.
 
-Copyright (C) Codebasics Inc. All rights reserved.
+© Codebasics Inc. All rights reserved.
 
-**Additional Terms:**
-This software is licensed under the MIT License. However, commercial use of this software is strictly prohibited without prior written permission from the author. Attribution must be given in all copies or substantial portions of the software.
