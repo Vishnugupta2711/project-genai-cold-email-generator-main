@@ -46,5 +46,5 @@ Here’s how it all fits together:
 
 Attribution is required in all copies or substantial portions of the software.
 
-© Codebasics Inc. All rights reserved.
+
 
